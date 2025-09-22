@@ -17,7 +17,7 @@ A comprehensive database and web application for cataloging and exploring all we
 - **Framework**: [Next.js 15](https://nextjs.org) with App Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS with custom Destiny theme
-- **Database**: Vercel Postgres with Drizzle ORM
+- **Database**: [Neon](https://neon.tech) Serverless Postgres with Drizzle ORM
 - **Image Storage**: Vercel Blob
 - **Deployment**: Vercel Platform
 
@@ -59,12 +59,14 @@ src/
    ```
 
 4. **Set up the database**
+   - Create a [Neon](https://neon.tech) account and database
+   - Copy the connection string to your `.env.local` file
    ```bash
    # Generate database schema
    npm run db:generate
 
-   # Run migrations
-   npm run db:migrate
+   # Push schema to database
+   npm run db:push
 
    # Seed initial data
    npm run db:seed
@@ -144,13 +146,13 @@ Access the admin interface at `/admin` to:
    - Add environment variables in Vercel dashboard
    - Deploy automatically on every push
 
-3. **Set up Vercel Postgres**
-   - Add Vercel Postgres to your project
-   - Copy connection strings to environment variables
-   - Run migrations on production
+3. **Set up Neon Database**
+   - Create a [Neon](https://neon.tech) account and database
+   - Copy the connection string to Vercel environment variables
+   - Run migrations: `npm run db:push`
 
 4. **Set up Vercel Blob**
-   - Add Vercel Blob to your project
+   - Vercel Blob is already added to your project
    - Copy the read/write token to environment variables
 
 ### Environment Variables
@@ -158,18 +160,11 @@ Access the admin interface at `/admin` to:
 Required environment variables for production:
 
 ```bash
-# Database
-POSTGRES_URL=
-POSTGRES_PRISMA_URL=
-POSTGRES_URL_NO_SSL=
-POSTGRES_URL_NON_POOLING=
-POSTGRES_USER=
-POSTGRES_HOST=
-POSTGRES_PASSWORD=
-POSTGRES_DATABASE=
+# Database (Neon)
+DATABASE_URL=postgresql://username:password@ep-xxx-xxx.us-east-1.aws.neon.tech/destiny_rising?sslmode=require
 
-# Image Storage
-BLOB_READ_WRITE_TOKEN=
+# Image Storage (Vercel Blob)
+BLOB_READ_WRITE_TOKEN=vercel_blob_rw_xxx
 ```
 
 ## 🤝 Contributing
