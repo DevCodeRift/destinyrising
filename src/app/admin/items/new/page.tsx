@@ -57,14 +57,14 @@ export default function NewItemPage() {
 
       <form onSubmit={handleSubmit} className="space-y-8">
         {/* Basic Information */}
-        <div className="bg-white shadow rounded-lg">
-          <div className="px-6 py-4 border-b border-gray-200">
-            <h3 className="text-lg font-medium text-gray-900">Basic Information</h3>
+        <div className="destiny-card">
+          <div className="px-6 py-4 border-b border-gray-700">
+            <h3 className="text-lg font-medium text-white">Basic Information</h3>
           </div>
           <div className="px-6 py-4 space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                   Item Name *
                 </label>
                 <input
@@ -74,13 +74,13 @@ export default function NewItemPage() {
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                  className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                   placeholder="e.g., Fatebringer"
                 />
               </div>
 
               <div>
-                <label htmlFor="powerLevel" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="powerLevel" className="block text-sm font-medium text-gray-300 mb-1">
                   Power Level
                 </label>
                 <input
@@ -89,14 +89,14 @@ export default function NewItemPage() {
                   name="powerLevel"
                   value={formData.powerLevel}
                   onChange={handleInputChange}
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                  className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                   placeholder="1350"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="description" className="block text-sm font-medium text-gray-300 mb-1">
                 Description
               </label>
               <textarea
@@ -105,13 +105,13 @@ export default function NewItemPage() {
                 rows={3}
                 value={formData.description}
                 onChange={handleInputChange}
-                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                 placeholder="Brief description of the item..."
               />
             </div>
 
             <div>
-              <label htmlFor="loreText" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="loreText" className="block text-sm font-medium text-gray-300 mb-1">
                 Lore Text
               </label>
               <textarea
@@ -120,13 +120,13 @@ export default function NewItemPage() {
                 rows={4}
                 value={formData.loreText}
                 onChange={handleInputChange}
-                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                 placeholder="Lore and background story..."
               />
             </div>
 
             <div>
-              <label htmlFor="source" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="source" className="block text-sm font-medium text-gray-300 mb-1">
                 Source
               </label>
               <input
@@ -135,7 +135,7 @@ export default function NewItemPage() {
                 name="source"
                 value={formData.source}
                 onChange={handleInputChange}
-                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white placeholder-gray-400 shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                 placeholder="e.g., Vault of Glass, Vendor, World Drop"
               />
             </div>
@@ -143,14 +143,14 @@ export default function NewItemPage() {
         </div>
 
         {/* Classification */}
-        <div className="bg-white shadow rounded-lg">
-          <div className="px-6 py-4 border-b border-gray-200">
-            <h3 className="text-lg font-medium text-gray-900">Classification</h3>
+        <div className="destiny-card">
+          <div className="px-6 py-4 border-b border-gray-700">
+            <h3 className="text-lg font-medium text-white">Classification</h3>
           </div>
           <div className="px-6 py-4 space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
-                <label htmlFor="itemType" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="itemType" className="block text-sm font-medium text-gray-300 mb-1">
                   Item Type *
                 </label>
                 <select
@@ -159,7 +159,7 @@ export default function NewItemPage() {
                   required
                   value={formData.itemType}
                   onChange={handleInputChange}
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                  className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                 >
                   <option value="">Select item type</option>
                   <optgroup label="Weapons">
@@ -185,7 +185,7 @@ export default function NewItemPage() {
               </div>
 
               <div>
-                <label htmlFor="rarity" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="rarity" className="block text-sm font-medium text-gray-300 mb-1">
                   Rarity *
                 </label>
                 <select
@@ -194,7 +194,7 @@ export default function NewItemPage() {
                   required
                   value={formData.rarity}
                   onChange={handleInputChange}
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                  className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                 >
                   <option value="">Select rarity</option>
                   <option value="common">Common</option>
@@ -206,7 +206,7 @@ export default function NewItemPage() {
               </div>
 
               <div>
-                <label htmlFor="element" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="element" className="block text-sm font-medium text-gray-300 mb-1">
                   Element
                 </label>
                 <select
@@ -214,7 +214,7 @@ export default function NewItemPage() {
                   name="element"
                   value={formData.element}
                   onChange={handleInputChange}
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                  className="block w-full rounded-md bg-gray-800 border border-gray-600 text-white shadow-sm focus:border-orange-400 focus:ring-orange-400 sm:text-sm"
                 >
                   <option value="">No element / Kinetic</option>
                   <option value="arc">Arc</option>
@@ -233,9 +233,9 @@ export default function NewItemPage() {
                   type="checkbox"
                   checked={formData.isCraftable}
                   onChange={handleInputChange}
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-orange-500 focus:ring-orange-400 border-gray-600 bg-gray-800 rounded"
                 />
-                <label htmlFor="isCraftable" className="ml-2 block text-sm text-gray-900">
+                <label htmlFor="isCraftable" className="ml-2 block text-sm text-gray-300">
                   Craftable
                 </label>
               </div>
@@ -247,9 +247,9 @@ export default function NewItemPage() {
                   type="checkbox"
                   checked={formData.isSunset}
                   onChange={handleInputChange}
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-orange-500 focus:ring-orange-400 border-gray-600 bg-gray-800 rounded"
                 />
-                <label htmlFor="isSunset" className="ml-2 block text-sm text-gray-900">
+                <label htmlFor="isSunset" className="ml-2 block text-sm text-gray-300">
                   Sunset (Legacy item)
                 </label>
               </div>
@@ -258,9 +258,9 @@ export default function NewItemPage() {
         </div>
 
         {/* Images */}
-        <div className="bg-white shadow rounded-lg">
-          <div className="px-6 py-4 border-b border-gray-200">
-            <h3 className="text-lg font-medium text-gray-900">Images</h3>
+        <div className="destiny-card">
+          <div className="px-6 py-4 border-b border-gray-700">
+            <h3 className="text-lg font-medium text-white">Images</h3>
           </div>
           <div className="px-6 py-4 space-y-6">
             <ImageUpload

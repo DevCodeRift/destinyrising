@@ -85,8 +85,11 @@ export function ImageUpload({
         disabled={isUploading}
         className={`
           relative overflow-hidden rounded-lg border-2 border-dashed
-          ${isUploading ? 'border-gray-300 bg-gray-50' : 'border-gray-300 hover:border-blue-400'}
-          ${error ? 'border-red-300' : ''}
+          ${isUploading
+            ? 'border-gray-600 bg-gray-800 text-gray-400'
+            : 'border-gray-600 hover:border-orange-400 bg-gray-900 text-gray-300'
+          }
+          ${error ? 'border-red-500 bg-red-900/20' : ''}
           transition-colors duration-200 p-4 w-full
           ${isUploading ? 'cursor-not-allowed' : 'cursor-pointer'}
         `}
@@ -95,8 +98,8 @@ export function ImageUpload({
           <div className="text-center">
             {isUploading ? (
               <>
-                <div className="mx-auto mb-2 h-8 w-8 animate-spin rounded-full border-2 border-blue-500 border-t-transparent"></div>
-                <p className="text-sm text-gray-600">Uploading...</p>
+                <div className="mx-auto mb-2 h-8 w-8 animate-spin rounded-full border-2 border-orange-500 border-t-transparent"></div>
+                <p className="text-sm text-gray-300">Uploading...</p>
               </>
             ) : (
               <>
@@ -113,7 +116,7 @@ export function ImageUpload({
                     d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
                   />
                 </svg>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-300">
                   Click to upload or drag and drop
                 </p>
                 <p className="text-xs text-gray-500 mt-1">
@@ -126,8 +129,8 @@ export function ImageUpload({
       </button>
 
       {error && (
-        <div className="mt-2 rounded-md bg-red-50 p-2">
-          <p className="text-sm text-red-600">{error}</p>
+        <div className="mt-2 rounded-md bg-red-900/30 border border-red-500 p-2">
+          <p className="text-sm text-red-300">{error}</p>
         </div>
       )}
     </div>
