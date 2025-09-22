@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+:root {
+  /* Base colors - Dark theme inspired by Destiny 2 */
+  --background: #0a0a0a;
+  --background-secondary: #1a1a1a;
+  --background-tertiary: #2a2a2a;
+  --foreground: #f0f0f0;
+  --foreground-secondary: #c0c0c0;
+  --foreground-muted: #8a8a8a;
+
+  /* Destiny 2 Rarity Colors */
+  --rarity-common: #ffffff;
+  --rarity-uncommon: #4AE54A;
+  --rarity-rare: #5EA3F2;
+  --rarity-legendary: #B447F2;
+  --rarity-exotic: #F2E55E;
+
+  /* Element Colors */
+  --element-kinetic: #ffffff;
+  --element-arc: #80CCFF;
+  --element-solar: #FF8000;
+  --element-void: #B866FF;
+  --element-stasis: #4D88FF;
+
+  /* UI Accent Colors */
+  --accent-primary: #FF8C00;
+  --accent-secondary: #FFA500;
+  --border-primary: #333333;
+  --border-secondary: #555555;
+
+  /* Gradients */
+  --gradient-exotic: linear-gradient(135deg, #F2E55E 0%, #FFD700 50%, #FFA500 100%);
+  --gradient-legendary: linear-gradient(135deg, #B447F2 0%, #9932CC 50%, #8A2BE2 100%);
+  --gradient-rare: linear-gradient(135deg, #5EA3F2 0%, #4169E1 50%, #0000FF 100%);
+  --gradient-background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Custom Destiny colors for Tailwind */
+  --color-destiny-common: var(--rarity-common);
+  --color-destiny-uncommon: var(--rarity-uncommon);
+  --color-destiny-rare: var(--rarity-rare);
+  --color-destiny-legendary: var(--rarity-legendary);
+  --color-destiny-exotic: var(--rarity-exotic);
+
+  --color-destiny-kinetic: var(--element-kinetic);
+  --color-destiny-arc: var(--element-arc);
+  --color-destiny-solar: var(--element-solar);
+  --color-destiny-void: var(--element-void);
+  --color-destiny-stasis: var(--element-stasis);
+}
+
+/* Light theme overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f5f5f5;
+    --background-secondary: #ffffff;
+    --background-tertiary: #e5e5e5;
+    --foreground: #1a1a1a;
+    --foreground-secondary: #333333;
+    --foreground-muted: #666666;
+    --border-primary: #d0d0d0;
+    --border-secondary: #b0b0b0;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Destiny UI Components */
+.destiny-card {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.destiny-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 20px rgba(255, 140, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.destiny-rarity-common {
+  color: var(--rarity-common);
+  border-color: var(--rarity-common);
+}
+
+.destiny-rarity-uncommon {
+  color: var(--rarity-uncommon);
+  border-color: var(--rarity-uncommon);
+}
+
+.destiny-rarity-rare {
+  color: var(--rarity-rare);
+  border-color: var(--rarity-rare);
+}
+
+.destiny-rarity-legendary {
+  color: var(--rarity-legendary);
+  border-color: var(--rarity-legendary);
+}
+
+.destiny-rarity-exotic {
+  color: var(--rarity-exotic);
+  border-color: var(--rarity-exotic);
+  background: var(--gradient-exotic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Element indicators */
+.destiny-element-arc { color: var(--element-arc); }
+.destiny-element-solar { color: var(--element-solar); }
+.destiny-element-void { color: var(--element-void); }
+.destiny-element-stasis { color: var(--element-stasis); }
+.destiny-element-kinetic { color: var(--element-kinetic); }
+
+/* Glowing effects */
+.destiny-glow {
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+}
+
+.destiny-glow-exotic {
+  box-shadow: 0 0 20px rgba(242, 229, 94, 0.4);
+}
+
+.destiny-glow-legendary {
+  box-shadow: 0 0 20px rgba(180, 71, 242, 0.4);
+}
