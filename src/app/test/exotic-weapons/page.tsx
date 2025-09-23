@@ -150,6 +150,17 @@ const gjallarhornData: ExoticWeaponData = {
     type: 'INTRINSIC TRAIT'
   },
 
+  catalystBands: [
+    {
+      id: 'ghorn-band1',
+      name: 'Gjallarhorn Catalyst',
+      description: 'Wolfpack rounds do increased damage.',
+      powerBonus: 800,
+      isUnlocked: true,
+      position: 1
+    }
+  ],
+
   stats: {
     dps: 890,
     precisionBonus: 1.0,
