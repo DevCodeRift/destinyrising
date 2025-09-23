@@ -4,10 +4,10 @@ import React from 'react';
 import { Header } from '@/components/ui/Header';
 import { Footer } from '@/components/ui/Footer';
 import { ArtifactSubmissionForm } from '@/components/ui/ArtifactSubmissionForm';
-import { ArtifactSubmissionForm as FormData } from '@/types/artifacts';
+import { ArtifactSubmissionForm as ArtifactFormData } from '@/types/artifacts';
 
 export default function ContributeArtifactsPage() {
-  const handleSubmission = async (data: FormData, files: File[]) => {
+  const handleSubmission = async (data: ArtifactFormData, files: File[]) => {
     const formData = new FormData();
 
     // Add JSON data

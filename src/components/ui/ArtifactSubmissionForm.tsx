@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Artifact, ArtifactSubmissionForm as FormData, RollableStat } from '@/types/artifacts';
+import { Artifact, ArtifactSubmissionForm as ArtifactFormData, RollableStat } from '@/types/artifacts';
 
 interface ArtifactSubmissionFormProps {
-  onSubmit: (data: FormData, files: File[]) => Promise<void>;
+  onSubmit: (data: ArtifactFormData, files: File[]) => Promise<void>;
   className?: string;
 }
 
@@ -14,7 +14,7 @@ export function ArtifactSubmissionForm({ onSubmit, className = '' }: ArtifactSub
   const [submitting, setSubmitting] = useState(false);
   const [selectedArtifact, setSelectedArtifact] = useState<string>('');
 
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState<ArtifactFormData>({
     artifactId: '',
     submitterInfo: {
       username: '',

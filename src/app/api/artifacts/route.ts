@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { sql, DatabaseArtifact, DatabaseRollableStat } from '@/lib/database';
+import { sql } from '@/lib/database';
 import { ArtifactSearchFilters, Artifact } from '@/types/artifacts';
 
 export async function GET(request: NextRequest) {
@@ -22,8 +22,8 @@ export async function GET(request: NextRequest) {
     const offset = (page - 1) * limit;
 
     // Build SQL query with filters
-    let whereConditions = [];
-    let queryParams = [];
+    const whereConditions = [];
+    const queryParams = [];
     let paramIndex = 1;
 
     if (filters.slot) {

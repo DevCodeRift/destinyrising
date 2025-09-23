@@ -1,186 +1,93 @@
-# Destiny Rising Database
+# Destiny Rising Artifact Database
 
-A comprehensive database and web application for cataloging and exploring all weapons, armor, artifacts, and resources in the game "Destiny Rising". Built with a modern tech stack and inspired by Light.gg.
+A community-driven database for collecting and sharing Destiny Rising artifact data, including set effects and rollable stat ranges.
 
-## 🚀 Features
+## Features
 
-- **Complete Item Database**: Weapons, armor, artifacts, resources, and maps
-- **Advanced Search & Filtering**: Find exactly what you're looking for
-- **Destiny 2 Themed UI**: Beautiful dark theme with rarity colors and visual effects
-- **Admin Content Management**: Easy-to-use interface for adding and managing items
-- **Image Storage**: Integrated with Vercel Blob for scalable image hosting
-- **Responsive Design**: Works perfectly on desktop and mobile
-- **Fast Performance**: Built with Next.js 15 and optimized for speed
+- **Browse Artifacts**: Search and filter through 80 artifacts across 4 equipment slots
+- **Community Contributions**: Submit artifact data with evidence (screenshots, videos)
+- **Admin Moderation**: Review and approve community submissions
+- **Verified Data**: Quality-controlled artifact information
+- **Modern Stack**: Built with Next.js 15, PostgreSQL (Neon), and Vercel Blob storage
 
-## 🛠️ Tech Stack
+## Quick Start
 
-- **Framework**: [Next.js 15](https://nextjs.org) with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS with custom Destiny theme
-- **Database**: [Neon](https://neon.tech) Serverless Postgres with Drizzle ORM
-- **Image Storage**: Vercel Blob
-- **Deployment**: Vercel Platform
+### Prerequisites
 
-## 📁 Project Structure
+- Node.js 18+
+- Neon PostgreSQL database
+- Vercel Blob storage (for file uploads)
 
-```
-src/
-├── app/                    # Next.js App Router pages
-│   ├── admin/             # Admin interface for content management
-│   ├── items/             # Item listing and detail pages
-│   ├── weapons/           # Weapon-specific pages
-│   └── api/               # API routes for uploads and data
-├── components/
-│   ├── admin/             # Admin-specific components
-│   └── ui/                # Reusable UI components
-├── lib/
-│   ├── db/                # Database schema and utilities
-│   └── storage/           # Image storage utilities
-└── types/                 # TypeScript type definitions
-```
+### Setup
 
-## 🚀 Getting Started
-
-1. **Clone the repository**
+1. **Clone and install dependencies**
    ```bash
    git clone <repository-url>
    cd destinyrising
-   ```
-
-2. **Install dependencies**
-   ```bash
    npm install
    ```
 
-3. **Set up environment variables**
-   Copy `.env.example` to `.env.local` and fill in your values:
+2. **Environment Variables**
+   Create `.env.local` based on `.env.local.example`:
    ```bash
-   cp .env.example .env.local
+   DATABASE_URL=postgresql://username:password@hostname/database_name
+   BLOB_READ_WRITE_TOKEN=vercel_blob_token_here
+   ADMIN_PASSWORD=your_admin_password_here
    ```
 
-4. **Set up the database**
-   - Create a [Neon](https://neon.tech) account and database
-   - Copy the connection string to your `.env.local` file
+3. **Database Setup**
+   Run the SQL scripts in your Neon database:
    ```bash
-   # Generate database schema
-   npm run db:generate
+   # Create tables
+   psql $DATABASE_URL -f database/schema.sql
 
-   # Push schema to database
-   npm run db:push
-
-   # Seed initial data
-   npm run db:seed
+   # Populate with initial data
+   psql $DATABASE_URL -f database/migrate.sql
    ```
 
-5. **Start the development server**
+4. **Start Development Server**
    ```bash
    npm run dev
    ```
 
-6. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+## Database Structure
 
-## 📊 Database Schema
+- **artifacts**: Core artifact data (name, slot, set effects, verification status)
+- **rollable_stats**: Statistical ranges for artifact attributes
+- **artifact_submissions**: Community submissions awaiting review
 
-The application uses a comprehensive schema designed for game item management:
+## API Endpoints
 
-- **Items**: Main table for all game items
-- **Categories**: Weapons, Armor, Artifacts, etc.
-- **Item Types**: Hand Cannons, Helmets, etc.
-- **Rarities**: Common, Uncommon, Rare, Legendary, Exotic
-- **Elements**: Arc, Solar, Void, Stasis, Kinetic
-- **Stats**: Item statistics and performance data
-- **Perks**: Weapon and armor perks/traits
-- **Collections**: Curated item collections
+- `GET /api/artifacts` - List and filter artifacts
+- `PUT /api/artifacts` - Update artifact data (admin)
+- `GET /api/artifacts/submissions` - List submissions
+- `POST /api/artifacts/submissions` - Submit new data
+- `PUT /api/artifacts/submissions/[id]` - Approve/reject submissions
+- `GET /api/health` - Database health check
 
-## 🎨 Design System
+## Pages
 
-### Rarity Colors
-- **Common**: `#FFFFFF`
-- **Uncommon**: `#4AE54A`
-- **Rare**: `#5EA3F2`
-- **Legendary**: `#B447F2`
-- **Exotic**: `#F2E55E`
+- `/` - Homepage with project overview
+- `/artifacts` - Browse all artifacts with filtering
+- `/contribute/artifacts` - Submit artifact data
+- `/admin/artifacts` - Admin panel for managing submissions
 
-### Element Colors
-- **Arc**: `#80CCFF`
-- **Solar**: `#FF8000`
-- **Void**: `#B866FF`
-- **Stasis**: `#4D88FF`
-- **Kinetic**: `#FFFFFF`
+## Contributing
 
-## 🔧 Available Scripts
+The system is designed for community contributions:
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run db:generate` - Generate database migrations
-- `npm run db:migrate` - Run database migrations
-- `npm run db:push` - Push schema changes to database
-- `npm run db:seed` - Seed database with initial data
-- `npm run db:studio` - Open Drizzle Studio
+1. Visit `/contribute/artifacts` to submit artifact data
+2. Provide set effects, stat ranges, and evidence
+3. Admin team reviews and approves accurate submissions
+4. Verified data becomes available to all users
 
-## 📱 Admin Interface
+## Tech Stack
 
-Access the admin interface at `/admin` to:
+- **Frontend**: Next.js 15 with App Router, React 19, Tailwind CSS
+- **Database**: PostgreSQL (Neon)
+- **File Storage**: Vercel Blob
+- **Deployment**: Vercel
 
-- Add new items with images
-- Manage categories and item types
-- Upload and organize images
-- View statistics and analytics
+## License
 
-## 🌐 Deployment
-
-### Deploy to Vercel
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-
-2. **Deploy to Vercel**
-   - Connect your GitHub repository to Vercel
-   - Add environment variables in Vercel dashboard
-   - Deploy automatically on every push
-
-3. **Set up Neon Database**
-   - Create a [Neon](https://neon.tech) account and database
-   - Copy the connection string to Vercel environment variables
-   - Run migrations: `npm run db:push`
-
-4. **Set up Vercel Blob**
-   - Vercel Blob is already added to your project
-   - Copy the read/write token to environment variables
-
-### Environment Variables
-
-Required environment variables for production:
-
-```bash
-# Database (Neon)
-DATABASE_URL=postgresql://username:password@ep-xxx-xxx.us-east-1.aws.neon.tech/destiny_rising?sslmode=require
-
-# Image Storage (Vercel Blob)
-BLOB_READ_WRITE_TOKEN=vercel_blob_rw_xxx
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is for educational and fan purposes. It is not affiliated with Bungie, NetEase Games, or the official Destiny franchise.
-
-## 🙏 Acknowledgments
-
-- Inspired by [Light.gg](https://light.gg) for Destiny 2
-- Built with love for the Destiny community
-- Special thanks to the Destiny Rising development team
+MIT License
