@@ -1,0 +1,1930 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-23T00:00:00.000Z",
+    "totalArtifacts": 80,
+    "verifiedArtifacts": 0
+  },
+  "artifacts": [
+    {
+      "id": "abundant-planetesimal",
+      "name": "Abundant Planetesimal",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "nourishing-pact",
+      "name": "Nourishing Pact",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "nimble-veil",
+      "name": "Nimble Veil",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "healing-radiation",
+      "name": "Healing Radiation",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "resolute-conjunction",
+      "name": "Resolute Conjunction",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "resolution-nutation",
+      "name": "Resolution Nutation",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "warding-pact",
+      "name": "Warding Pact",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "healing-planetesimal",
+      "name": "Healing Planetesimal",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "talisman-of-revival",
+      "name": "Talisman of Revival",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "unrelenting-subgravity",
+      "name": "Unrelenting Subgravity",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "unrelenting-ground",
+      "name": "Unrelenting Ground",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "nimble-ground",
+      "name": "Nimble Ground",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-healing",
+      "name": "Ring of Healing",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-abundance",
+      "name": "Ring of Abundance",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "chiaroscuro",
+      "name": "Chiaroscuro",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "inverted-guard",
+      "name": "Inverted Guard",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "upright-guard",
+      "name": "Upright Guard",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bulwark-evolution",
+      "name": "Bulwark Evolution",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "unrelenting-shell",
+      "name": "Unrelenting Shell",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bulwark-token",
+      "name": "Bulwark Token",
+      "slot": 1,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "healing-veil",
+      "name": "Healing Veil",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "inverted-tenacity",
+      "name": "Inverted Tenacity",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "resolute-radiation",
+      "name": "Resolute Radiation",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "healing-conjunction",
+      "name": "Healing Conjunction",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "healing-nutation",
+      "name": "Healing Nutation",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "siphoning-pact",
+      "name": "Siphoning Pact",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bulwark-pact",
+      "name": "Bulwark Pact",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "binging-planetesimal",
+      "name": "Binging Planetesimal",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "retributive-planetesimal",
+      "name": "Retributive Planetesimal",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "talisman-of-luxuriance",
+      "name": "Talisman of Luxuriance",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "healing-subgravity",
+      "name": "Healing Subgravity",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "fertile-ground",
+      "name": "Fertile Ground",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "healing-ground",
+      "name": "Healing Ground",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-safeguarding",
+      "name": "Ring of Safeguarding",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-conversion",
+      "name": "Ring of Conversion",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "pranayama",
+      "name": "Pranayama",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "upright-tenacity",
+      "name": "Upright Tenacity",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "unrelenting-evolution",
+      "name": "Unrelenting Evolution",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bloodthirsty-shell",
+      "name": "Bloodthirsty Shell",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "unrelenting-token",
+      "name": "Unrelenting Token",
+      "slot": 2,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "courageous-planetesimal",
+      "name": "Courageous Planetesimal",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "rampaging-pact",
+      "name": "Rampaging Pact",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bellicose-radiation",
+      "name": "Bellicose Radiation",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bellicose-precession",
+      "name": "Bellicose Precession",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bellicose-pact",
+      "name": "Bellicose Pact",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "vigilant-planetesimal",
+      "name": "Vigilant Planetesimal",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "talisman-of-unity",
+      "name": "Talisman of Unity",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "valiant-subgravity",
+      "name": "Valiant Subgravity",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "valiant-ground",
+      "name": "Valiant Ground",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "mysterious-submagnetism",
+      "name": "Mysterious Submagnetism",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bellicose-veil",
+      "name": "Bellicose Veil",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-morale",
+      "name": "Ring of Morale",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-courage",
+      "name": "Ring of Courage",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "upright-vengeance",
+      "name": "Upright Vengeance",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "inverted-fury",
+      "name": "Inverted Fury",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "upright-fury",
+      "name": "Upright Fury",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "predator-evolution",
+      "name": "Predator Evolution",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "scattering-shell",
+      "name": "Scattering Shell",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "calming-token",
+      "name": "Calming Token",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "jolted-transit",
+      "name": "Jolted Transit",
+      "slot": 3,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bellicose-planetesimal",
+      "name": "Bellicose Planetesimal",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "valiant-veil",
+      "name": "Valiant Veil",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "rampaging-radiation",
+      "name": "Rampaging Radiation",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "rampaging-precession",
+      "name": "Rampaging Precession",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "resonating-pact",
+      "name": "Resonating Pact",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "responsive-pact",
+      "name": "Responsive Pact",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "rampaging-planetesimal",
+      "name": "Rampaging Planetesimal",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "talisman-of-inspiration",
+      "name": "Talisman of Inspiration",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "light-rich-ground",
+      "name": "Light-Rich Ground",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "bellicose-subgravity",
+      "name": "Bellicose Subgravity",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "illuminated-ground",
+      "name": "Illuminated Ground",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-vengeance",
+      "name": "Ring of Vengeance",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "ring-of-reflection",
+      "name": "Ring of Reflection",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "inverted-survival",
+      "name": "Inverted Survival",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "inverted-vengeance",
+      "name": "Inverted Vengeance",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "upright-survival",
+      "name": "Upright Survival",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "sympathetic-evolution",
+      "name": "Sympathetic Evolution",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "explosive-shell",
+      "name": "Explosive Shell",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "hawkeye-token",
+      "name": "Hawkeye Token",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    },
+    {
+      "id": "resonating-transit",
+      "name": "Resonating Transit",
+      "slot": 4,
+      "description": "",
+      "image": "",
+      "setEffects": {
+        "effect1": "",
+        "effect2": "",
+        "effect3": "",
+        "effect4": "",
+        "effect5": ""
+      },
+      "rollableAttributes": {
+        "primaryStats": [],
+        "secondaryStats": []
+      },
+      "metadata": {
+        "createdAt": "2025-01-23T00:00:00.000Z",
+        "updatedAt": "2025-01-23T00:00:00.000Z",
+        "submissionCount": 0,
+        "verified": false
+      }
+    }
+  ]
+}

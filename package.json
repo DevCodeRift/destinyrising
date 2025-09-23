@@ -14,6 +14,7 @@
     "db:seed": "dotenv -e .env.local -- tsx src/lib/db/seed.ts"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
     "@types/pg": "^8.15.5",
     "@vercel/blob": "^2.0.0",
     "drizzle-kit": "^0.31.4",
