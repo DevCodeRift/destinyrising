@@ -62,6 +62,10 @@ export function ChaperonePerfectRecreation({ className = '' }: ChaperonePerfectR
                         width={200}
                         height={120}
                         className="object-contain"
+                        priority
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
                       />
                     </div>
                   </div>
@@ -96,6 +100,14 @@ export function ChaperonePerfectRecreation({ className = '' }: ChaperonePerfectR
                     width={48}
                     height={48}
                     className="rounded-full"
+                    onError={(e) => {
+                      // Fallback to a golden circle if image fails to load
+                      e.currentTarget.style.display = 'none';
+                      const fallback = document.createElement('div');
+                      fallback.className = 'w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center border-2 border-yellow-400';
+                      fallback.innerHTML = '<div class="w-6 h-6 bg-yellow-300 rounded-full"></div>';
+                      e.currentTarget.parentNode?.appendChild(fallback);
+                    }}
                   />
                 </button>
                 <button
@@ -108,6 +120,14 @@ export function ChaperonePerfectRecreation({ className = '' }: ChaperonePerfectR
                     width={48}
                     height={48}
                     className="rounded-full"
+                    onError={(e) => {
+                      // Fallback to a golden circle if image fails to load
+                      e.currentTarget.style.display = 'none';
+                      const fallback = document.createElement('div');
+                      fallback.className = 'w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center border-2 border-yellow-400';
+                      fallback.innerHTML = '<div class="w-6 h-6 bg-yellow-300 rounded-full"></div>';
+                      e.currentTarget.parentNode?.appendChild(fallback);
+                    }}
                   />
                 </button>
               </div>
