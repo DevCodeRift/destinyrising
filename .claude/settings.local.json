@@ -12,7 +12,8 @@
       "Bash(source:*)",
       "Bash(yes)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:www.light.gg)"
     ],
     "deny": [],
     "ask": []
