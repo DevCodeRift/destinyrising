@@ -8,291 +8,285 @@ interface LightGGStyleProps {
 }
 
 export function LightGGStyle({ className = '' }: LightGGStyleProps) {
-  const [selectedTab, setSelectedTab] = useState<'overview' | 'perks' | 'lore'>('overview');
-
-  const stats = [
-    { name: 'Impact', value: 33, maxValue: 100, color: 'bg-orange-500' },
-    { name: 'Range', value: 74, maxValue: 100, color: 'bg-blue-500' },
-    { name: 'Stability', value: 53, maxValue: 100, color: 'bg-green-500' },
-    { name: 'Handling', value: 72, maxValue: 100, color: 'bg-purple-500' },
-    { name: 'Reload Speed', value: 37, maxValue: 100, color: 'bg-yellow-500' },
-    { name: 'Rounds Per Minute', value: 65, maxValue: 120, color: 'bg-red-500' },
-  ];
-
-  const getStatWidth = (value: number, maxValue: number) => {
-    return (value / maxValue) * 100;
-  };
+  const [allSectionsExpanded, setAllSectionsExpanded] = useState(true);
 
   return (
-    <div className={`bg-gray-50 min-h-screen ${className}`}>
-      <div className="max-w-7xl mx-auto p-6">
-        {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center space-x-4 mb-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center">
+    <div className={`bg-gray-900 text-white min-h-screen ${className}`}>
+      <div className="max-w-5xl mx-auto p-6">
+        {/* Header Section */}
+        <div className="flex items-start justify-between mb-6">
+          <div className="flex items-start space-x-4">
+            <div className="w-20 h-20 relative">
               <Image
                 src="/assets/exotics/exotic_weapons/The_Chaperone/167x167-ChaperoneIcon.jpg"
-                alt="The Chaperone"
-                width={48}
-                height={48}
-                className="rounded-lg"
+                alt="NEW MALPAIS"
+                width={80}
+                height={80}
+                className="rounded"
               />
             </div>
             <div>
-              <h1 className="text-4xl font-bold text-gray-900">The Chaperone</h1>
-              <div className="flex items-center space-x-2 mt-1">
-                <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">
-                  Exotic
-                </span>
-                <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
-                  Shotgun
-                </span>
-                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                  Kinetic
-                </span>
+              <div className="flex items-center space-x-2 mb-1">
+                <h1 className="text-2xl font-bold text-white">NEW MALPAIS</h1>
+                <div className="w-6 h-4 bg-red-500 border border-white rounded-sm flex items-center justify-center">
+                  <div className="w-3 h-2 bg-blue-500 relative">
+                    <div className="absolute inset-0 bg-white" style={{
+                      backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 1px, white 1px, white 2px)`
+                    }}></div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-gray-300 text-sm mb-2">
+                Exotic / ⚡ Kinetic / Pulse Rifle
+              </div>
+              <div className="text-gray-400 text-sm italic mb-4">
+                &quot;Decide! Principles or power—you can&apos;t have both.&quot; —Spider
+              </div>
+              <div className="flex items-center space-x-4">
+                <button className="flex items-center space-x-1 text-cyan-400 text-sm hover:text-cyan-300">
+                  <div className="w-4 h-4 bg-cyan-400 rounded"></div>
+                  <span>View in 3D</span>
+                </button>
+                <div className="flex items-center space-x-1 text-green-400 text-sm">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span>Source: Rewards Pass</span>
+                </div>
               </div>
             </div>
           </div>
-
-          <p className="text-gray-600 text-lg max-w-3xl">
-            &quot;My father had a saying: &apos;If you&apos;re gonna play cards with the devil, you&apos;d better know whose deal it is.&apos;&quot;
-          </p>
         </div>
 
-        {/* Tabs */}
-        <div className="border-b border-gray-200 mb-6">
-          <nav className="flex space-x-8">
-            {[
-              { id: 'overview', label: 'Overview' },
-              { id: 'perks', label: 'Perks & Traits' },
-              { id: 'lore', label: 'Lore' }
-            ].map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setSelectedTab(tab.id as 'overview' | 'perks' | 'lore')}
-                className={`py-3 px-1 border-b-2 font-medium text-sm transition-colors ${
-                  selectedTab === tab.id
-                    ? 'border-blue-500 text-blue-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </nav>
+        {/* Toggle All Sections Button */}
+        <div className="mb-6">
+          <button
+            onClick={() => setAllSectionsExpanded(!allSectionsExpanded)}
+            className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded text-sm font-medium"
+          >
+            Toggle All Sections
+          </button>
         </div>
 
-        {/* Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left Column - Main Info */}
-          <div className="lg:col-span-2 space-y-6">
-            {selectedTab === 'overview' && (
-              <>
-                {/* Stats Card */}
-                <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-6">Stats</h2>
-                  <div className="space-y-4">
-                    {stats.map((stat) => (
-                      <div key={stat.name} className="flex items-center">
-                        <div className="w-24 text-sm font-medium text-gray-700 flex-shrink-0">
-                          {stat.name}
-                        </div>
-                        <div className="flex-1 mx-4">
-                          <div className="bg-gray-200 rounded-full h-3 relative overflow-hidden">
-                            <div
-                              className={`h-full rounded-full transition-all duration-500 ${stat.color}`}
-                              style={{ width: `${getStatWidth(stat.value, stat.maxValue)}%` }}
-                            />
-                          </div>
-                        </div>
-                        <div className="w-12 text-right text-sm font-bold text-gray-900">
-                          {stat.value}
-                        </div>
-                      </div>
-                    ))}
+        {/* Exotic Perks Section */}
+        {allSectionsExpanded && (
+          <div className="mb-8">
+            <button className="flex items-center space-x-2 mb-4 text-white">
+              <span className="text-white">▼</span>
+              <h2 className="text-xl font-bold">Exotic Perks</h2>
+            </button>
+
+            <div className="space-y-4 ml-6">
+              {/* Atomizing Rounds */}
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-gray-800 rounded flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 bg-yellow-400 rounded" style={{
+                    background: 'radial-gradient(circle, #fbbf24 0%, #f59e0b 100%)'
+                  }}></div>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-2">Atomizing Rounds</h3>
+                  <p className="text-gray-300 text-sm">
+                    Rounds fired embed themselves in targets. [Alternate Weapon Action] to detonate embedded rounds.
+                  </p>
+                </div>
+              </div>
+
+              {/* Suspending Blast */}
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-gray-800 rounded flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8" style={{
+                    background: 'conic-gradient(from 0deg, #06b6d4, #3b82f6, #8b5cf6, #06b6d4)',
+                    clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'
+                  }}></div>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-2">Suspending Blast</h3>
+                  <p className="text-gray-300 text-sm">
+                    Detonating a large number of rounds embedded in a single target suspends them.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Stats Section */}
+        {allSectionsExpanded && (
+          <div className="mb-8">
+            <button className="flex items-center space-x-2 mb-4 text-white">
+              <span className="text-white">▼</span>
+              <h2 className="text-xl font-bold">Stats</h2>
+            </button>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ml-6">
+              {/* Left Column Stats */}
+              <div className="space-y-4">
+                {/* Range */}
+                <div className="flex items-center">
+                  <div className="w-20 text-sm text-white">Range</div>
+                  <div className="w-4 h-4 bg-green-500 rounded-sm mr-2"></div>
+                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4 relative">
+                    <div className="bg-green-500 h-full rounded-full" style={{ width: '38%' }}>
+                      <div className="absolute right-0 top-0 h-full bg-green-300 rounded-full" style={{ width: '18px' }}></div>
+                    </div>
                   </div>
+                  <div className="w-8 text-right text-white font-bold text-sm">38</div>
+                </div>
+
+                {/* Velocity */}
+                <div className="flex items-center">
+                  <div className="w-20 text-sm text-white">Velocity</div>
+                  <div className="w-4 h-4 bg-gray-600 rounded-sm mr-2"></div>
+                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4">
+                    <div className="bg-gray-600 h-full rounded-full" style={{ width: '59%' }}></div>
+                  </div>
+                  <div className="w-8 text-right text-white font-bold text-sm">59</div>
+                </div>
+
+                {/* Stability */}
+                <div className="flex items-center">
+                  <div className="w-20 text-sm text-white">Stability</div>
+                  <div className="w-4 h-4 bg-green-500 rounded-sm mr-2"></div>
+                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4 relative">
+                    <div className="bg-green-500 h-full rounded-full" style={{ width: '57%' }}>
+                      <div className="absolute right-0 top-0 h-full bg-green-300 rounded-full" style={{ width: '15px' }}></div>
+                    </div>
+                  </div>
+                  <div className="w-8 text-right text-white font-bold text-sm">57</div>
+                </div>
+
+                {/* Handling */}
+                <div className="flex items-center">
+                  <div className="w-20 text-sm text-white">Handling</div>
+                  <div className="w-4 h-4 bg-red-500 rounded-sm mr-2"></div>
+                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4 relative">
+                    <div className="bg-red-500 h-full rounded-full" style={{ width: '36%' }}>
+                      <div className="absolute left-0 top-0 h-full bg-red-700 rounded-full" style={{ width: '5px' }}></div>
+                    </div>
+                  </div>
+                  <div className="w-8 text-right text-white font-bold text-sm">36</div>
+                </div>
+
+                {/* Reload Speed */}
+                <div className="flex items-center">
+                  <div className="w-20 text-sm text-white">Reload Speed</div>
+                  <div className="w-4 h-4 bg-green-500 rounded-sm mr-2"></div>
+                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4 relative">
+                    <div className="bg-green-500 h-full rounded-full" style={{ width: '66%' }}>
+                      <div className="absolute right-0 top-0 h-full bg-green-300 rounded-full" style={{ width: '18px' }}></div>
+                    </div>
+                  </div>
+                  <div className="w-8 text-right text-white font-bold text-sm">66</div>
+                </div>
+
+                {/* Reload Time */}
+                <div className="flex items-center">
+                  <div className="w-20 text-sm text-white">Reload Time</div>
+                  <div className="w-4 h-4 bg-red-500 rounded-sm mr-2"></div>
+                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4">
+                    <div className="bg-red-500 h-full rounded-full" style={{ width: '20%' }}></div>
+                  </div>
+                  <div className="w-16 text-right text-white font-bold text-sm">1.79s</div>
                 </div>
 
                 {/* Additional Stats */}
-                <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-6">Additional Information</h2>
-                  <div className="grid grid-cols-2 gap-6">
-                    <div>
-                      <dt className="text-sm font-medium text-gray-500">Power Level</dt>
-                      <dd className="mt-1 text-lg font-semibold text-gray-900">4490-5030</dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-medium text-gray-500">Gear Level</dt>
-                      <dd className="mt-1 text-lg font-semibold text-gray-900">70</dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-medium text-gray-500">Magazine Size</dt>
-                      <dd className="mt-1 text-lg font-semibold text-gray-900">6</dd>
-                    </div>
-                    <div>
-                      <dt className="text-sm font-medium text-gray-500">Max Ammo</dt>
-                      <dd className="mt-1 text-lg font-semibold text-gray-900">24</dd>
+                <div className="space-y-2 mt-6">
+                  <div className="flex justify-between">
+                    <span className="text-sm text-gray-300">Aim Assistance</span>
+                    <span className="text-sm text-white">74</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-sm text-gray-300">Ammo Generation</span>
+                    <span className="text-sm text-white">24</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-sm text-gray-300">Zoom</span>
+                    <span className="text-sm text-white">17</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-sm text-gray-300">Airborne Effectiveness</span>
+                    <span className="text-sm text-white">20</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-sm text-gray-300">Recoil</span>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-4 h-4 bg-green-500 rounded-sm"></div>
+                      <span className="text-sm text-white font-bold">80</span>
                     </div>
                   </div>
-                </div>
-              </>
-            )}
-
-            {selectedTab === 'perks' && (
-              <div className="space-y-4">
-                {/* Intrinsic Trait */}
-                <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src="/assets/exotics/exotic_weapons/The_Chaperone/IntrinsicTrait.png"
-                        alt="Precision Slug"
-                        width={48}
-                        height={48}
-                        className="rounded-lg"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-lg font-semibold text-gray-900">Precision Slug</h3>
-                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">
-                          Intrinsic
-                        </span>
-                      </div>
-                      <p className="text-gray-600">
-                        Fires a single-slug precision round.
-                      </p>
-                    </div>
+                  <div className="flex justify-between">
+                    <span className="text-sm text-gray-300">Rounds Per Minute</span>
+                    <span className="text-sm text-white">320</span>
                   </div>
-                </div>
-
-                {/* The Roadborn */}
-                <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src="/assets/exotics/exotic_weapons/The_Chaperone/Perk1.png"
-                        alt="The Roadborn"
-                        width={48}
-                        height={48}
-                        className="rounded-lg"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-lg font-semibold text-gray-900">The Roadborn</h3>
-                        <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">
-                          Exotic Perk
-                        </span>
-                      </div>
-                      <p className="text-gray-600">
-                        Precision kills briefly increase the weapon&apos;s handling, range, and precision damage.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Catalyst */}
-                <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
-                      <div className="w-6 h-6 bg-yellow-500 rounded transform rotate-45"></div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-lg font-semibold text-gray-900">The Chaperone Catalyst</h3>
-                        <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs font-medium">
-                          Catalyst
-                        </span>
-                      </div>
-                      <p className="text-gray-600">
-                        Precision final blows automatically reload this weapon from reserves.
-                      </p>
+                  <div className="flex justify-between">
+                    <span className="text-sm text-gray-300">Magazine</span>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-4 h-4 bg-green-500 rounded-sm"></div>
+                      <span className="text-sm text-white font-bold">36</span>
                     </div>
                   </div>
                 </div>
               </div>
-            )}
 
-            {selectedTab === 'lore' && (
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                <h2 className="text-xl font-semibold text-gray-900 mb-6">Lore</h2>
-                <div className="prose prose-gray max-w-none">
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    &quot;My father had a saying: &apos;If you&apos;re gonna play cards with the devil, you&apos;d better know whose deal it is.&apos;&quot;
-                  </p>
-                  <p className="text-gray-600 leading-relaxed mb-4">
-                    The Chaperone represents more than just firepower - it&apos;s a symbol of precision, discipline, and the fine line between order and chaos. Every Guardian who wields this weapon carries forward a legacy of calculated risk and unwavering determination.
-                  </p>
-                  <p className="text-gray-600 leading-relaxed">
-                    In the hands of a skilled marksman, The Chaperone becomes an extension of will itself, turning each precise shot into a statement of intent that echoes across the battlefield.
-                  </p>
+              {/* Right Column - Perk Playground */}
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
+                    <span className="text-white font-semibold">Perk Playground</span>
+                  </div>
+                  <button className="bg-orange-600 hover:bg-orange-700 text-white px-3 py-1 rounded text-xs">
+                    Expand ▲
+                  </button>
                 </div>
-              </div>
-            )}
-          </div>
 
-          {/* Right Column - Sidebar */}
-          <div className="space-y-6">
-            {/* Weapon Image */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/assets/exotics/exotic_weapons/The_Chaperone/167x167-ChaperoneIcon.jpg"
-                  alt="The Chaperone"
-                  width={200}
-                  height={200}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="text-center">
-                <h3 className="font-semibold text-gray-900">The Chaperone</h3>
-                <p className="text-sm text-gray-500">Exotic Shotgun</p>
-              </div>
-            </div>
+                <div className="space-y-4">
+                  <div className="flex space-x-2">
+                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-3 py-1 rounded text-xs">
+                      Curated
+                    </button>
+                  </div>
 
-            {/* Quick Stats */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Stats</h3>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-sm text-gray-500">DPS</span>
-                  <span className="text-sm font-medium text-gray-900">737</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-sm text-gray-500">Precision Bonus</span>
-                  <span className="text-sm font-medium text-gray-900">1.6x</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-sm text-gray-500">Damage</span>
-                  <span className="text-sm font-medium text-gray-900">1100</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-sm text-gray-500">Rate of Fire</span>
-                  <span className="text-sm font-medium text-gray-900">65 RPM</span>
-                </div>
-              </div>
-            </div>
+                  <div className="grid grid-cols-5 gap-2">
+                    {/* Row 1 */}
+                    <div className="w-12 h-12 bg-gray-800 border border-orange-500 rounded flex items-center justify-center">
+                      <div className="w-8 h-8 bg-yellow-400 rounded-full" style={{
+                        background: 'radial-gradient(circle, #fbbf24 20%, #f59e0b 80%)'
+                      }}></div>
+                    </div>
+                    <div className="w-12 h-12 bg-gray-800 border border-orange-500 rounded flex items-center justify-center">
+                      <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <div className="w-12 h-12 bg-gray-800 border border-orange-500 rounded flex items-center justify-center">
+                      <div className="w-8 h-8 bg-white rounded"></div>
+                    </div>
+                    <div className="w-12 h-12 bg-gray-800 border border-orange-500 rounded flex items-center justify-center">
+                      <div className="w-8 h-8" style={{
+                        background: 'conic-gradient(from 0deg, #06b6d4, #3b82f6, #8b5cf6, #06b6d4)',
+                        clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'
+                      }}></div>
+                    </div>
+                    <div className="w-12 h-12 bg-gray-800 border border-gray-600 rounded flex items-center justify-center">
+                      <div className="w-8 h-8 bg-white rounded-full opacity-50"></div>
+                    </div>
+                    <div className="w-12 h-12 bg-gray-800 border border-gray-600 rounded flex items-center justify-center">
+                      <div className="w-6 h-8 bg-yellow-600 rounded"></div>
+                    </div>
+                  </div>
 
-            {/* Sources */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Sources</h3>
-              <div className="space-y-2">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                  <span className="text-sm text-gray-600">Exotic Engram</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-sm text-gray-600">Random Drop</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  <span className="text-sm text-gray-600">Shifting Gates</span>
+                  <div className="flex space-x-2">
+                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-3 py-1 rounded text-xs">
+                      Reset
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        )}
+
+        {/* Credits */}
+        <div className="mt-12 pt-4 border-t border-gray-700">
+          <a href="#" className="text-cyan-400 text-sm hover:text-cyan-300">Credits</a>
         </div>
       </div>
     </div>
