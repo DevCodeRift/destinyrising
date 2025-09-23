@@ -172,14 +172,18 @@ export function DynamicWeaponDisplay({ weaponData, className = '' }: DynamicWeap
                   <div className="w-8 text-right text-white font-bold text-sm">{weaponData.stats.range}</div>
                 </div>
 
-                {/* Velocity */}
+                {/* Reload Speed */}
                 <div className="flex items-center">
-                  <div className="w-20 text-sm text-white">Velocity</div>
-                  <div className={`w-4 h-4 ${getStatColor(weaponData.stats.velocity)} rounded-sm mr-2`}></div>
-                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4">
-                    <div className={`${getStatColor(weaponData.stats.velocity)} h-full rounded-full`} style={{ width: `${weaponData.stats.velocity}%` }}></div>
+                  <div className="w-20 text-sm text-white">Reload Speed</div>
+                  <div className={`w-4 h-4 ${getStatColor(weaponData.stats.reloadSpeed)} rounded-sm mr-2`}></div>
+                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4 relative">
+                    <div className={`${getStatColor(weaponData.stats.reloadSpeed)} h-full rounded-full`} style={{ width: `${weaponData.stats.reloadSpeed}%` }}>
+                      {hasBoost(weaponData.stats.reloadSpeed) && (
+                        <div className={`absolute right-0 top-0 h-full ${getStatColorLight(weaponData.stats.reloadSpeed)} rounded-full`} style={{ width: '18px' }}></div>
+                      )}
+                    </div>
                   </div>
-                  <div className="w-8 text-right text-white font-bold text-sm">{weaponData.stats.velocity}</div>
+                  <div className="w-8 text-right text-white font-bold text-sm">{weaponData.stats.reloadSpeed}</div>
                 </div>
 
                 {/* Stability */}
@@ -210,65 +214,31 @@ export function DynamicWeaponDisplay({ weaponData, className = '' }: DynamicWeap
                   <div className="w-8 text-right text-white font-bold text-sm">{weaponData.stats.handling}</div>
                 </div>
 
-                {/* Reload Speed */}
-                <div className="flex items-center">
-                  <div className="w-20 text-sm text-white">Reload Speed</div>
-                  <div className={`w-4 h-4 ${getStatColor(weaponData.stats.reloadSpeed)} rounded-sm mr-2`}></div>
-                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4 relative">
-                    <div className={`${getStatColor(weaponData.stats.reloadSpeed)} h-full rounded-full`} style={{ width: `${weaponData.stats.reloadSpeed}%` }}>
-                      {hasBoost(weaponData.stats.reloadSpeed) && (
-                        <div className={`absolute right-0 top-0 h-full ${getStatColorLight(weaponData.stats.reloadSpeed)} rounded-full`} style={{ width: '18px' }}></div>
-                      )}
-                    </div>
-                  </div>
-                  <div className="w-8 text-right text-white font-bold text-sm">{weaponData.stats.reloadSpeed}</div>
-                </div>
-
-                {/* Reload Time */}
-                <div className="flex items-center">
-                  <div className="w-20 text-sm text-white">Reload Time</div>
-                  <div className="w-4 h-4 bg-red-500 rounded-sm mr-2"></div>
-                  <div className="flex-1 bg-gray-700 h-2 rounded-full mr-4">
-                    <div className="bg-red-500 h-full rounded-full" style={{ width: '20%' }}></div>
-                  </div>
-                  <div className="w-16 text-right text-white font-bold text-sm">{weaponData.stats.reloadTime}</div>
-                </div>
-
-                {/* Additional Stats */}
+                {/* Simple Stats List */}
                 <div className="space-y-2 mt-6">
                   <div className="flex justify-between">
-                    <span className="text-sm text-gray-300">Aim Assistance</span>
-                    <span className="text-sm text-white">{weaponData.stats.aimAssistance}</span>
+                    <span className="text-sm text-gray-300">DPS</span>
+                    <span className="text-sm text-white">{weaponData.stats.dps}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-gray-300">Ammo Generation</span>
-                    <span className="text-sm text-white">{weaponData.stats.ammoGeneration}</span>
+                    <span className="text-sm text-gray-300">Precision Bonus</span>
+                    <span className="text-sm text-white">{weaponData.stats.precisionBonus}x</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-gray-300">Zoom</span>
-                    <span className="text-sm text-white">{weaponData.stats.zoom}</span>
+                    <span className="text-sm text-gray-300">Damage</span>
+                    <span className="text-sm text-white">{weaponData.stats.damage}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-gray-300">Airborne Effectiveness</span>
-                    <span className="text-sm text-white">{weaponData.stats.airborneEffectiveness}</span>
+                    <span className="text-sm text-gray-300">Rate of Fire</span>
+                    <span className="text-sm text-white">{weaponData.stats.rateOfFire} RPM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-gray-300">Recoil</span>
-                    <div className="flex items-center space-x-2">
-                      <div className={`w-4 h-4 ${getStatColor(weaponData.stats.recoil)} rounded-sm`}></div>
-                      <span className="text-sm text-white font-bold">{weaponData.stats.recoil}</span>
-                    </div>
+                    <span className="text-sm text-gray-300">Magazine Cap</span>
+                    <span className="text-sm text-white">{weaponData.stats.magazineCap}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-gray-300">Rounds Per Minute</span>
-                    <span className="text-sm text-white">{weaponData.stats.roundsPerMinute}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-300">Magazine</span>
-                    <div className="flex items-center space-x-2">
-                      <div className={`w-4 h-4 ${getStatColor(weaponData.stats.magazine)} rounded-sm`}></div>
-                      <span className="text-sm text-white font-bold">{weaponData.stats.magazine}</span>
-                    </div>
+                    <span className="text-sm text-gray-300">Max Ammo</span>
+                    <span className="text-sm text-white">{weaponData.stats.maxAmmo}</span>
                   </div>
                 </div>
               </div>

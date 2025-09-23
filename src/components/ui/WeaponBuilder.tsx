@@ -19,30 +19,28 @@ export interface WeaponData {
     icon?: string;
   }[];
   stats: {
+    dps: number;
+    precisionBonus: number;
+    magazineCap: number;
+    maxAmmo: number;
+    rateOfFire: number;
+    damage: number;
+    reloadSpeed: number;
     range: number;
-    velocity: number;
     stability: number;
     handling: number;
-    reloadSpeed: number;
-    reloadTime: string;
-    aimAssistance: number;
-    ammoGeneration: number;
-    zoom: number;
-    airborneEffectiveness: number;
-    recoil: number;
-    roundsPerMinute: number;
-    magazine: number;
   };
   perkIcons: string[];
 }
 
 interface WeaponBuilderProps {
   onSave: (weaponData: WeaponData) => void;
+  initialData?: WeaponData;
   className?: string;
 }
 
-export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
-  const [weaponData, setWeaponData] = useState<WeaponData>({
+export function WeaponBuilder({ onSave, initialData, className = '' }: WeaponBuilderProps) {
+  const [weaponData, setWeaponData] = useState<WeaponData>(initialData || {
     id: '',
     name: '',
     type: 'Exotic',
@@ -57,19 +55,16 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
       { name: '', description: '', icon: '' }
     ],
     stats: {
+      dps: 0,
+      precisionBonus: 0,
+      magazineCap: 0,
+      maxAmmo: 0,
+      rateOfFire: 0,
+      damage: 0,
+      reloadSpeed: 0,
       range: 0,
-      velocity: 0,
       stability: 0,
       handling: 0,
-      reloadSpeed: 0,
-      reloadTime: '0.00s',
-      aimAssistance: 0,
-      ammoGeneration: 0,
-      zoom: 0,
-      airborneEffectiveness: 0,
-      recoil: 0,
-      roundsPerMinute: 0,
-      magazine: 0,
     },
     perkIcons: ['', '', '', '', '', '']
   });
@@ -108,16 +103,18 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
       const url = URL.createObjectURL(file);
       if (key === 'weaponImage') {
         handleInputChange('weaponImage', url);
-      } else if (key.startsWith('perk') && key.endsWith('Icon')) {
-        const perkIndex = parseInt(key.replace('perk', '').replace('Icon', '')) - 1;
-        if (perkIndex < 2) {
-          handlePerkChange(perkIndex, 'icon', url);
-        } else {
-          const perkIconIndex = perkIndex - 2;
+      } else if (key === 'perk1Icon') {
+        handlePerkChange(0, 'icon', url);
+      } else if (key === 'perk2Icon') {
+        handlePerkChange(1, 'icon', url);
+      } else if (key.startsWith('perkIcon')) {
+        // Handle regular perk icons (perkIcon1, perkIcon2, etc.)
+        const iconIndex = parseInt(key.replace('perkIcon', '')) - 1;
+        if (iconIndex >= 0 && iconIndex < 6) {
           setWeaponData(prev => ({
             ...prev,
             perkIcons: prev.perkIcons.map((icon, i) =>
-              i === perkIconIndex ? url : icon
+              i === iconIndex ? url : icon
             )
           }));
         }
@@ -322,6 +319,87 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
 
             <div className="grid grid-cols-2 gap-4">
               <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">DPS</label>
+                <input
+                  type="number"
+                  min="0"
+                  value={weaponData.stats.dps}
+                  onChange={(e) => handleInputChange('stats.dps', parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Precision Bonus</label>
+                <input
+                  type="number"
+                  min="0"
+                  step="0.1"
+                  value={weaponData.stats.precisionBonus}
+                  onChange={(e) => handleInputChange('stats.precisionBonus', parseFloat(e.target.value) || 0)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="e.g., 1.6"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Magazine Cap</label>
+                <input
+                  type="number"
+                  min="0"
+                  value={weaponData.stats.magazineCap}
+                  onChange={(e) => handleInputChange('stats.magazineCap', parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Max Ammo</label>
+                <input
+                  type="number"
+                  min="0"
+                  value={weaponData.stats.maxAmmo}
+                  onChange={(e) => handleInputChange('stats.maxAmmo', parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Rate of Fire</label>
+                <input
+                  type="number"
+                  min="0"
+                  value={weaponData.stats.rateOfFire}
+                  onChange={(e) => handleInputChange('stats.rateOfFire', parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="RPM"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Damage</label>
+                <input
+                  type="number"
+                  min="0"
+                  value={weaponData.stats.damage}
+                  onChange={(e) => handleInputChange('stats.damage', parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Reload Speed</label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  value={weaponData.stats.reloadSpeed}
+                  onChange={(e) => handleInputChange('stats.reloadSpeed', parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+              <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Range</label>
                 <input
                   type="number"
@@ -329,18 +407,6 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
                   max="100"
                   value={weaponData.stats.range}
                   onChange={(e) => handleInputChange('stats.range', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Velocity</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.velocity}
-                  onChange={(e) => handleInputChange('stats.velocity', parseInt(e.target.value) || 0)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
@@ -368,113 +434,6 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Reload Speed</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.reloadSpeed}
-                  onChange={(e) => handleInputChange('stats.reloadSpeed', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Reload Time</label>
-                <input
-                  type="text"
-                  value={weaponData.stats.reloadTime}
-                  onChange={(e) => handleInputChange('stats.reloadTime', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="e.g., 1.79s"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Aim Assistance</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.aimAssistance}
-                  onChange={(e) => handleInputChange('stats.aimAssistance', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Ammo Generation</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.ammoGeneration}
-                  onChange={(e) => handleInputChange('stats.ammoGeneration', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Zoom</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.zoom}
-                  onChange={(e) => handleInputChange('stats.zoom', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Airborne Effectiveness</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.airborneEffectiveness}
-                  onChange={(e) => handleInputChange('stats.airborneEffectiveness', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Recoil</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.recoil}
-                  onChange={(e) => handleInputChange('stats.recoil', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Rounds Per Minute</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="1000"
-                  value={weaponData.stats.roundsPerMinute}
-                  onChange={(e) => handleInputChange('stats.roundsPerMinute', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Magazine</label>
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={weaponData.stats.magazine}
-                  onChange={(e) => handleInputChange('stats.magazine', parseInt(e.target.value) || 0)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
             </div>
           </div>
 
@@ -489,7 +448,7 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
                   <input
                     type="file"
                     accept="image/*"
-                    onChange={(e) => handleImageUpload(`perkIcon${index + 3}`, e.target.files?.[0] || null)}
+                    onChange={(e) => handleImageUpload(`perkIcon${index + 1}`, e.target.files?.[0] || null)}
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                   />
                   {icon && (

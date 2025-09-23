@@ -163,7 +163,10 @@ export default function WeaponBuilderPage() {
 
           {/* Builder */}
           {showBuilder && (
-            <WeaponBuilder onSave={handleSaveWeapon} />
+            <WeaponBuilder
+              onSave={handleSaveWeapon}
+              initialData={selectedWeapon || undefined}
+            />
           )}
 
           {/* Preview */}
