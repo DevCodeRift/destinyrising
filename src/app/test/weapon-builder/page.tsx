@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Header } from '@/components/ui/Header';
 import { Footer } from '@/components/ui/Footer';
 import { WeaponBuilder, WeaponData } from '@/components/ui/WeaponBuilder';
@@ -116,10 +117,12 @@ export default function WeaponBuilderPage() {
                     <div className="flex items-start space-x-3">
                       <div className="w-12 h-12 bg-gray-100 rounded flex items-center justify-center flex-shrink-0">
                         {weapon.weaponImage ? (
-                          <img
+                          <Image
                             src={weapon.weaponImage}
                             alt={weapon.name}
-                            className="w-10 h-10 object-contain rounded"
+                            width={40}
+                            height={40}
+                            className="object-contain rounded"
                           />
                         ) : (
                           <span className="text-xs text-gray-400">No Image</span>
@@ -201,7 +204,7 @@ export default function WeaponBuilderPage() {
                   <li>• Set all weapon stats (0-100 scale)</li>
                   <li>• Add exotic perk names and descriptions</li>
                   <li>• Upload up to 6 perk icons for the perk grid</li>
-                  <li>• Click "Save & Publish" to create the weapon</li>
+                  <li>• Click &quot;Save &amp; Publish&quot; to create the weapon</li>
                 </ul>
               </div>
               <div>

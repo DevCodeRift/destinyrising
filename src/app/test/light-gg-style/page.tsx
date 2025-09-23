@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Image from 'next/image';
 import { Header } from '@/components/ui/Header';
 import { Footer } from '@/components/ui/Footer';
 import { LightGGStyle } from '@/components/ui/LightGGStyle';
@@ -101,10 +102,12 @@ function LightGGStyleContent() {
                     <div className="flex items-start space-x-3">
                       <div className="w-16 h-16 bg-gray-100 rounded flex items-center justify-center flex-shrink-0">
                         {weapon.weaponImage ? (
-                          <img
+                          <Image
                             src={weapon.weaponImage}
                             alt={weapon.name}
-                            className="w-12 h-12 object-contain rounded"
+                            width={48}
+                            height={48}
+                            className="object-contain rounded"
                           />
                         ) : (
                           <span className="text-xs text-gray-400">No Image</span>

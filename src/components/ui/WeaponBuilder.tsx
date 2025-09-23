@@ -74,28 +74,18 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
     perkIcons: ['', '', '', '', '', '']
   });
 
-  const [imageUploads, setImageUploads] = useState<{[key: string]: File | null}>({
-    weaponImage: null,
-    perk1Icon: null,
-    perk2Icon: null,
-    perkIcon1: null,
-    perkIcon2: null,
-    perkIcon3: null,
-    perkIcon4: null,
-    perkIcon5: null,
-    perkIcon6: null,
-  });
-
-  const handleInputChange = (field: string, value: any) => {
+  const handleInputChange = (field: string, value: string | number) => {
     if (field.includes('.')) {
       const [parent, child] = field.split('.');
-      setWeaponData(prev => ({
-        ...prev,
-        [parent]: {
-          ...prev[parent as keyof WeaponData],
-          [child]: value
-        }
-      }));
+      if (parent === 'stats') {
+        setWeaponData(prev => ({
+          ...prev,
+          stats: {
+            ...prev.stats,
+            [child]: value
+          }
+        }));
+      }
     } else {
       setWeaponData(prev => ({
         ...prev,
@@ -114,7 +104,6 @@ export function WeaponBuilder({ onSave, className = '' }: WeaponBuilderProps) {
   };
 
   const handleImageUpload = (key: string, file: File | null) => {
-    setImageUploads(prev => ({ ...prev, [key]: file }));
     if (file) {
       const url = URL.createObjectURL(file);
       if (key === 'weaponImage') {
