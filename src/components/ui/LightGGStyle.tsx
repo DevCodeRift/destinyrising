@@ -232,7 +232,7 @@ export function LightGGStyle({ className = '' }: LightGGStyleProps) {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
                     <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
-                    <span className="text-white font-semibold">Perk Playground</span>
+                    <span className="text-white font-semibold">Perks</span>
                   </div>
                   <button className="bg-orange-600 hover:bg-orange-700 text-white px-3 py-1 rounded text-xs">
                     Expand ▲
