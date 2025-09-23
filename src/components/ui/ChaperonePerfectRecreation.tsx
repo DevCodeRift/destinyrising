@@ -15,71 +15,77 @@ export function ChaperonePerfectRecreation({ className = '' }: ChaperonePerfectR
       <div className="flex">
         {/* Left Panel - Exact Recreation */}
         <div className="w-1/2 min-h-[700px]">
-          {/* Header - Exact match to Header.png */}
+          {/* Header - Exact 1:1 recreation of Header.png */}
           <div className="relative">
-            {/* Golden background with diamond pattern */}
-            <div className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 relative overflow-hidden">
-              {/* Diamond pattern overlay */}
-              <div className="absolute inset-0 opacity-20">
-                <div className="flex justify-center space-x-4 pt-3">
-                  {[...Array(6)].map((_, i) => (
-                    <div key={i} className="w-6 h-6 bg-white transform rotate-45 opacity-30"></div>
-                  ))}
-                </div>
+            {/* Golden background - exact match */}
+            <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 relative h-80">
+              {/* Diamond pattern at top - exact positioning */}
+              <div className="absolute top-4 left-0 right-0 flex justify-center space-x-4">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="w-6 h-6 bg-white/40 transform rotate-45"></div>
+                ))}
               </div>
 
-              <div className="relative z-10 p-6">
-                <div className="flex items-start justify-between">
-                  <div className="flex-1">
-                    <h1 className="text-4xl font-bold text-white mb-4">The Chaperone</h1>
-                    <div className="flex items-center space-x-3 mb-6">
-                      <div className="w-10 h-10 bg-purple-700 rounded-sm flex items-center justify-center">
-                        <div className="w-6 h-6 bg-white rounded-sm"></div>
-                      </div>
-                      <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                        <div className="w-6 h-6 bg-white rounded-full"></div>
-                      </div>
-                      <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center border-2 border-gray-600">
-                        <div className="w-4 h-4 bg-gray-800 rounded-full"></div>
-                      </div>
-                      <span className="text-black font-bold text-lg ml-4">SHOTGUN</span>
+              {/* Content positioning exactly like Header.png */}
+              <div className="relative pt-16 px-8 h-full flex">
+                {/* Left side content */}
+                <div className="flex-1">
+                  {/* "The Chaperone" title */}
+                  <h1 className="text-5xl font-bold text-white mb-6">The Chaperone</h1>
+
+                  {/* Icons and SHOTGUN - exact positioning */}
+                  <div className="flex items-center space-x-4 mb-12">
+                    {/* Purple rectangle icon */}
+                    <div className="w-12 h-10 bg-purple-700 rounded-lg flex items-center justify-center">
+                      <div className="text-white text-xs font-bold">III</div>
                     </div>
 
-                    <div className="mb-2">
-                      <div className="text-black text-lg font-bold">BASE POWER</div>
-                      <div className="text-black text-4xl font-bold">
-                        ◇4490~5030
-                      </div>
+                    {/* Blue circle icon */}
+                    <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 border-2 border-white rounded-full"></div>
                     </div>
+
+                    {/* Gray circle with X */}
+                    <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center border-2 border-gray-400">
+                      <div className="text-black text-lg font-bold">×</div>
+                    </div>
+
+                    <span className="text-white font-bold text-xl ml-2">SHOTGUN</span>
                   </div>
 
-                  {/* Weapon Image */}
-                  <div className="flex-shrink-0 ml-8">
-                    <div className="w-80 h-32 flex items-center justify-center">
-                      <Image
-                        src="/assets/exotics/exotic_weapons/The_Chaperone/167x167-ChaperoneIcon.jpg"
-                        alt="The Chaperone"
-                        width={200}
-                        height={120}
-                        className="object-contain"
-                        priority
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                        }}
-                      />
+                  {/* BASE POWER section - exact positioning */}
+                  <div className="absolute bottom-16 left-8">
+                    <div className="text-white/80 text-lg font-bold mb-2">BASE POWER</div>
+                    <div className="text-white text-5xl font-bold flex items-center">
+                      <span className="mr-2">◇</span>4490~5030
                     </div>
+                  </div>
+                </div>
+
+                {/* Right side - weapon image */}
+                <div className="flex-1 flex items-center justify-center">
+                  <div className="relative">
+                    <Image
+                      src="/assets/exotics/exotic_weapons/The_Chaperone/167x167-ChaperoneIcon.jpg"
+                      alt="The Chaperone"
+                      width={300}
+                      height={150}
+                      className="object-contain"
+                      priority
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Gear Level Badge */}
-            <div className="bg-gray-900 px-6 py-3">
-              <div className="flex items-center">
-                <span className="text-white text-lg font-bold mr-4">GEAR LEVEL</span>
-                <div className="bg-gray-700 px-4 py-2 rounded border-2 border-gray-600">
-                  <span className="text-white text-2xl font-bold">70</span>
-                </div>
+            {/* Gear Level section - exact match */}
+            <div className="bg-gray-900 h-16 flex items-center px-8">
+              <span className="text-white text-xl font-bold mr-8">GEAR LEVEL</span>
+              <div className="bg-transparent border-2 border-gray-500 px-4 py-1 rounded">
+                <span className="text-white text-2xl font-bold">70</span>
               </div>
             </div>
           </div>
