@@ -1,27 +1,18 @@
 {
-  "name": "destinyrising",
+  "name": "destiny-rising-artifacts",
   "version": "0.1.0",
   "private": true,
+  "description": "Community-driven database for Destiny Rising artifacts",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "db:generate": "dotenv -e .env.local -- drizzle-kit generate",
-    "db:migrate": "dotenv -e .env.local -- drizzle-kit migrate",
-    "db:push": "dotenv -e .env.local -- drizzle-kit push",
-    "db:studio": "dotenv -e .env.local -- drizzle-kit studio",
-    "db:seed": "dotenv -e .env.local -- tsx src/lib/db/seed.ts"
+    "lint": "eslint"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
-    "@types/pg": "^8.15.5",
     "@vercel/blob": "^2.0.0",
-    "drizzle-kit": "^0.31.4",
-    "drizzle-orm": "^0.44.5",
     "next": "15.5.3",
-    "pg": "^8.16.3",
-    "postgres": "^3.4.7",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
@@ -31,11 +22,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "dotenv-cli": "^10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4",
-    "tsx": "^4.20.5",
     "typescript": "^5"
   }
 }

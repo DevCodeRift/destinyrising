@@ -7,11 +7,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Items', href: '/items' },
-    { name: 'Weapons', href: '/weapons' },
-    { name: 'Armor', href: '/armor' },
-    { name: 'Artifacts', href: '/artifacts' },
-    { name: 'Collections', href: '/collections' },
+    { name: 'Browse Artifacts', href: '/artifacts' },
+    { name: 'Contribute Data', href: '/contribute/artifacts' },
   ];
 
   return (
@@ -26,7 +23,7 @@ export function Header() {
                   <span className="text-white font-bold text-sm">DR</span>
                 </div>
                 <span className="text-white text-xl font-bold">
-                  Destiny <span className="text-orange-400">Rising</span>
+                  Destiny <span className="text-orange-400">Rising</span> <span className="text-gray-400 text-sm">Artifacts</span>
                 </span>
               </Link>
             </div>
@@ -54,7 +51,7 @@ export function Header() {
                 </svg>
               </button>
               <Link
-                href="/admin"
+                href="/admin/artifacts"
                 className="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Admin
@@ -98,7 +95,7 @@ export function Header() {
               ))}
               <div className="border-t border-gray-800 pt-3">
                 <Link
-                  href="/admin"
+                  href="/admin/artifacts"
                   className="text-gray-300 hover:text-orange-400 block px-3 py-2 text-base font-medium transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
